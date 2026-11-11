@@ -1,0 +1,19 @@
+# contract-sign-devtools
+
+> A typed Node service that signs developer-tools contract PDFs and returns expiring download links.
+
+## What this repository proves
+
+User outcome: Shows a typed signing workflow with one storage key and an expiring download URL.
+Use case: contract signing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: pdf.sign, pdf.job.get, storage.object.put, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/sign_contract.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

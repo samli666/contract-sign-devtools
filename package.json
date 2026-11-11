@@ -1,0 +1,14 @@
+{
+  "name": "contract-sign-devtools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/sign_contract.ts",
+    "test": "node --experimental-strip-types --test src/sign_contract.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.2"
+  }
+}
